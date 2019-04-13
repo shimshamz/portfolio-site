@@ -1,15 +1,11 @@
 * {
     font-family: 'Montserrat';
-    color: #fff;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
     background-image: url('/img/bg.jpg');
     background-size: cover;
@@ -25,15 +21,4 @@ body:before {
     display: block;
     position: absolute;
     background-color: rgba(0,0,0,0.85);
-}
-
-#myIcon {
-    width: 12vw;
-    height: 12vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    border: 1px #fff solid;
-    z-index: 0;
 }
