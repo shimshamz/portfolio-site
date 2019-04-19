@@ -97,6 +97,7 @@ nav {
     min-height: 90%;
     max-width: 700px;
     margin: 10px 0;
+    padding: 0 15px;
     background-color: var(--dark);
 }
 
@@ -106,19 +107,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
     border-bottom: 1px #888 solid;
 }
 
 .closeBtn {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    padding: 15px;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
 
     &:hover, &:focus {
@@ -127,7 +125,7 @@ nav {
 
     .lines {
         width: 20px;
-        height: 3px;
+        height: 2px;
         display: block;
         position: absolute;
         background-color: var(--color);
