@@ -17,11 +17,56 @@
     <div id="myIcon">SM</div>
     <nav>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li><a href="media/resume.pdf" title="Download Resume">Resume</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- About Modal -->
+    <div class="modal" id="about">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h1>About</h1>
+                <div class="closeBtn">
+                    <span class="lines one"></span>
+                    <span class="lines two"></span>
+                </div>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolio">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h1>Portfolio</h1>
+                <div class="closeBtn">
+                    <span class="lines one"></span>
+                    <span class="lines two"></span>
+                </div>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contact">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h1>Contact</h1>
+                <div class="closeBtn">
+                    <span class="lines one"></span>
+                    <span class="lines two"></span>
+                </div>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/modal.js"></script>
 </body>
 </html>
