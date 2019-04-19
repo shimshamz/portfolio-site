@@ -156,6 +156,13 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
 p {
     font-size: 1em;
     margin-bottom: 15px;
@@ -178,4 +185,67 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 15px;
+
+    @media only screen and (min-width: 540px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.item-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #888;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 2px;
+
+    .card-header {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+
+        .title {
+            font-size: 1.15em;
+            margin-bottom: 0;  
+        }
+
+        .github-btn {
+            font-size: 1em;
+            padding: 6px;
+            background-color: transparent;
+            outline: none;
+            border: 2px #ed8f31 solid;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: 0.15s ease-in-out;
+
+            &:hover, &:focus {
+                background-color: #ed8f31;
+            }
+        }
+    }
+
+    .screenshot {
+        width: 100%;
+        flex-grow: 1;
+        background-color: #f1f1f1;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
 }
