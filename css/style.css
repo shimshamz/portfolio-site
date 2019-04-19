@@ -102,7 +102,7 @@ nav ul li a {
   transition: 0.15s ease-in-out;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a:focus {
   color: var(--dark);
   background-color: rgba(241, 241, 241, 0.6);
 }
