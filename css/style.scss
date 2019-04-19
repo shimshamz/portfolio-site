@@ -74,10 +74,7 @@ nav {
                 text-transform: uppercase;
                 text-decoration: none;   
 
-                &:hover, 
-                &:focus, 
-                &:hover i, 
-                &:focus i {
+                &:hover, &:focus {
                     color: var(--dark);
                 }
             }
@@ -170,6 +167,7 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    transition: 0.15s ease-in-out;
 
     &:hover i, &:focus i {
         color: var(--dark);

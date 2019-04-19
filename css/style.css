@@ -102,9 +102,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover, nav ul li a:focus,
-nav ul li a:hover i,
-nav ul li a:focus i {
+nav ul li a:hover, nav ul li a:focus {
   color: var(--dark);
 }
 
@@ -220,6 +218,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 .socials-container:hover i, .socials-container:focus i {
