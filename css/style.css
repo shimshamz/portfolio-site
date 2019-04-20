@@ -344,7 +344,6 @@ nav ul li:hover, nav ul li:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5px;
 }
 
 .item-card .card-header .title {
@@ -385,6 +384,7 @@ nav ul li:hover, nav ul li:focus {
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #f1f1f1;
+  margin-top: 5px;
 }
 
 .item-card .screenshot img {

@@ -254,7 +254,6 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 5px;
 
         .title {
             width: 50%;
@@ -290,6 +289,7 @@ nav {
         width: 100%;
         flex-grow: 1;
         background-color: #f1f1f1;
+        margin-top: 5px;
 
         img {
             width: 100%;
