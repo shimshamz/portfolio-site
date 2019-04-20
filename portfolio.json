@@ -20,6 +20,13 @@
             "url": "https://angular-movie-shimshamz.herokuapp.com/index.html",
             "githubURL": "https://github.com/shimshamz/is219Mohanlal-p3",
             "imgURL": "portfolio-thumbnails/img3.JPG"
+        },
+        {
+            "title": "JS Image Gallery",
+            "type": "coursework",
+            "url": "https://imagegallery-shimshamz.herokuapp.com/index.html",
+            "githubURL": "https://github.com/shimshamz/IS219s18Mohanlal-p2",
+            "imgURL": "portfolio-thumbnails/img4.JPG"
         }
     ]
 }
