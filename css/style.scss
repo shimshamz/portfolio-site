@@ -9,6 +9,7 @@ html {
     --color: #f1f1f1;
     --dark: #0f0f0f;
     --black: #000;
+    --accent: #ed8f31;
 }
 
 body {
@@ -194,15 +195,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    position: relative;
     cursor: pointer;
 
-    &:hover, &:focus {
-        background-color: #333;
-    }
-
     .lines {
-        width: 20px;
+        width: 100%;
         height: 2px;
         display: block;
         position: absolute;
@@ -215,6 +212,10 @@ nav {
 
     .two {
         transform: rotateZ(-45deg);
+    }
+
+    &:hover .lines, &:focus .lines {
+        background-color: var(--accent);
     }
 }
 
@@ -286,13 +287,13 @@ nav {
             padding: 6px;
             background-color: transparent;
             outline: none;
-            border: 2px #ed8f31 solid;
+            border: 2px var(--accent) solid;
             border-radius: 2px;
             cursor: pointer;
             transition: 0.15s ease-in-out;
 
             &:hover, &:focus {
-                background-color: #ed8f31;
+                background-color: var(--accent);
             }
         }
     }

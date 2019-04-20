@@ -8,6 +8,7 @@ html {
   --color: #f1f1f1;
   --dark: #0f0f0f;
   --black: #000;
+  --accent: #ed8f31;
 }
 
 body {
@@ -252,16 +253,12 @@ nav ul li:hover, nav ul li:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 100%;
+  position: relative;
   cursor: pointer;
 }
 
-.closeBtn:hover, .closeBtn:focus {
-  background-color: #333;
-}
-
 .closeBtn .lines {
-  width: 20px;
+  width: 100%;
   height: 2px;
   display: block;
   position: absolute;
@@ -276,6 +273,10 @@ nav ul li:hover, nav ul li:focus {
 .closeBtn .two {
   -webkit-transform: rotateZ(-45deg);
           transform: rotateZ(-45deg);
+}
+
+.closeBtn:hover .lines, .closeBtn:focus .lines {
+  background-color: var(--accent);
 }
 
 .modal-body {
@@ -382,7 +383,7 @@ nav ul li:hover, nav ul li:focus {
   padding: 6px;
   background-color: transparent;
   outline: none;
-  border: 2px #ed8f31 solid;
+  border: 2px var(--accent) solid;
   border-radius: 2px;
   cursor: pointer;
   -webkit-transition: 0.15s ease-in-out;
@@ -390,7 +391,7 @@ nav ul li:hover, nav ul li:focus {
 }
 
 .item-card .card-header .github-btn:hover, .item-card .card-header .github-btn:focus {
-  background-color: #ed8f31;
+  background-color: var(--accent);
 }
 
 .item-card .screenshot {
