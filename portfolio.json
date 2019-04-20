@@ -13,6 +13,13 @@
             "url": "http://supercarssa.co.za/",
             "githubURL": "https://github.com/shimshamz/Supercars-SA",
             "imgURL": "portfolio-thumbnails/img2.JPG"
+        },
+        {
+            "title": "AngularJS Movie Posters",
+            "type": "coursework",
+            "url": "https://angular-movie-shimshamz.herokuapp.com/index.html",
+            "githubURL": "https://github.com/shimshamz/is219Mohanlal-p3",
+            "imgURL": "portfolio-thumbnails/img3.JPG"
         }
     ]
 }
