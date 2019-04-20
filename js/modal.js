@@ -16,7 +16,6 @@ function openModal() {
     setTimeout(function() {
         modal.style.opacity = 1;
     }, 50);
-    
 }
 
 function closeModal() {
