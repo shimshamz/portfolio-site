@@ -27,6 +27,13 @@
             "url": "https://imagegallery-shimshamz.herokuapp.com/index.html",
             "githubURL": "https://github.com/shimshamz/IS219s18Mohanlal-p2",
             "imgURL": "portfolio-thumbnails/img4.JPG"
+        },
+        {
+            "title": "Laravel FAQ Bot",
+            "type": "coursework",
+            "url": "https://github.com/NJIT-WIS/webAPI",
+            "githubURL": "https://github.com/NJIT-WIS/webAPI",
+            "imgURL": ""
         }
     ]
 }
