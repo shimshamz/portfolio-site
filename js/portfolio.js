@@ -47,14 +47,16 @@ function createCard(item) {
     cardHeader.appendChild(p);
     cardHeader.appendChild(githubBtn);
 
+    card.appendChild(cardHeader);
+
     var screenshot = document.createElement('div');
     screenshot.classList.add('screenshot');
-    var img = document.createElement('img');
-    img.setAttribute('src', item.imgURL);
-    screenshot.appendChild(img);
-
-    card.appendChild(cardHeader);
-    card.appendChild(screenshot);
+    if (item.imgURL) {
+        var img = document.createElement('img');
+        img.setAttribute('src', item.imgURL);
+        screenshot.appendChild(img);
+        card.appendChild(screenshot);
+    }
 
     return card;
 }
