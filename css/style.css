@@ -68,8 +68,8 @@ a {
 }
 
 #myIcon {
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,9 +80,25 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 25px 0;
-  font-size: 3em;
+  font-size: 2.25em;
   border: 1px var(--color) solid;
   z-index: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #myIcon {
+    width: 110px;
+    height: 110px;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #myIcon {
+    width: 140px;
+    height: 140px;
+    font-size: 3.5em;
+  }
 }
 
 nav {
@@ -119,8 +135,8 @@ nav ul li {
 nav ul li a {
   width: 100%;
   display: block;
-  padding: 15px;
-  font-size: 1.25em;
+  padding: 8px;
+  font-size: 1em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -129,8 +145,44 @@ nav ul li a:hover, nav ul li a:focus {
   color: var(--dark);
 }
 
+@media only screen and (min-width: 768px) {
+  nav ul li a {
+    padding: 15px;
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav ul li a {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+}
+
 nav ul li:hover, nav ul li:focus {
   background-color: rgba(241, 241, 241, 0.6);
+}
+
+@media only screen and (min-width: 1024px) {
+  nav ul li:not(:last-child) {
+    border-right: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    width: 70%;
+    height: 30%;
+  }
 }
 
 .modal {
