@@ -7,6 +7,7 @@ html {
   height: 100%;
   --color: #f1f1f1;
   --dark: #0f0f0f;
+  --black: #000;
 }
 
 body {
@@ -41,6 +42,29 @@ body:before {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.85);
   z-index: -1;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
 }
 
 #myIcon {
@@ -99,7 +123,6 @@ nav ul li a {
   font-size: 1.25em;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 nav ul li a:hover, nav ul li a:focus {
@@ -192,25 +215,6 @@ nav ul li:hover, nav ul li:focus {
   margin: 20px 0;
 }
 
-h1 {
-  font-size: 1.5em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 1.2em;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0 0 15px 0;
-}
-
-p {
-  font-size: 1em;
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-
 .socials-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,8 +275,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #888;
-  padding: 6px;
+  background-color: var(--black);
+  padding: 8px;
   text-decoration: none;
   border-radius: 2px;
 }
@@ -292,8 +296,12 @@ p {
 }
 
 .item-card .card-header .title {
-  font-size: 1.15em;
+  font-size: 1.1em;
   margin-bottom: 0;
+}
+
+.item-card .card-header .title:hover a, .item-card .card-header .title:focus a {
+  text-decoration: underline;
 }
 
 .item-card .card-header .github-btn {
