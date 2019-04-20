@@ -199,6 +199,9 @@ nav ul li:hover, nav ul li:focus {
   overflow-y: auto;
   padding: 25px 0;
   background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 .modal-container {

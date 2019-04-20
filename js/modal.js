@@ -13,8 +13,15 @@ function openModal() {
     id = href;
     modal = document.getElementById(href);
     modal.style.display = 'flex';
+    setTimeout(function() {
+        modal.style.opacity = 1;
+    }, 50);
+    
 }
 
 function closeModal() {
-    modal.style.display = 'none';
+    modal.style.opacity = 0;
+    setTimeout(function() {
+        modal.style.display = 'none';
+    }, 150);
 }
