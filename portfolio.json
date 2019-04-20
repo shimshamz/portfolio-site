@@ -2,11 +2,14 @@
     "items": [
         {
             "title": "JS Todo List App",
-            "githubURL": "",
-            "imgURL": ""
+            "type": "project",
+            "url": "https://todolistapp-shimshamz.herokuapp.com/index.html",
+            "githubURL": "https://github.com/shimshamz/TodoListAppJS",
+            "imgURL": "portfolio-thumbnails/img1.JPG"
         },
         {
             "title": "Supercars SA",
+            "type": "project",
             "url": "http://supercarssa.co.za/",
             "githubURL": "https://github.com/shimshamz/Supercars-SA",
             "imgURL": "portfolio-thumbnails/img2.JPG"
