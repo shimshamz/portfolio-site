@@ -403,7 +403,7 @@ nav ul li:hover, nav ul li:focus {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background-color: #f1f1f1;
+  background-color: var(--dark);
   margin-top: 5px;
 }
 
@@ -413,5 +413,18 @@ nav ul li:hover, nav ul li:focus {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.item-card .tech {
+  width: 100%;
+  color: #c6c6c6;
+  font-size: 0.65em;
+  margin: 5px 0;
+}
+
+.item-card .desc {
+  width: 100%;
+  font-size: 0.8em;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

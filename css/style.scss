@@ -304,7 +304,7 @@ nav {
     .screenshot {
         width: 100%;
         flex-grow: 1;
-        background-color: #f1f1f1;
+        background-color: var(--dark);
         margin-top: 5px;
 
         img {
@@ -313,5 +313,18 @@ nav {
             display: block;
             object-fit: cover;
         }
+    }
+
+    .tech {
+        width: 100%;
+        color: #c6c6c6;
+        font-size: 0.65em;
+        margin: 5px 0;
+    }
+
+    .desc {
+        width: 100%;
+        font-size: 0.8em;
+        margin: 0;
     }
 }
