@@ -32,19 +32,19 @@ function createCard(item) {
     var cardHeader = document.createElement('div');
     cardHeader.classList.add('card-header');
 
-    var p = document.createElement('p');
-    p.classList.add('title');
-    var title = document.createElement('a');
-    title.innerHTML = item.title;
-    title.setAttribute('href', item.url);
+    var title = document.createElement('p');
+    title.classList.add('title');
+    var titleLink = document.createElement('a');
+    titleLink.innerHTML = item.title;
+    titleLink.setAttribute('href', item.url);
 
     var githubBtn = document.createElement('a');
     githubBtn.classList.add('github-btn');
     githubBtn.setAttribute('href', item.githubURL);
     githubBtn.innerHTML = 'GitHub ' + githubIcon;
 
-    p.appendChild(title);
-    cardHeader.appendChild(p);
+    title.appendChild(titleLink);
+    cardHeader.appendChild(title);
     cardHeader.appendChild(githubBtn);
 
     card.appendChild(cardHeader);
@@ -55,8 +55,18 @@ function createCard(item) {
         var img = document.createElement('img');
         img.setAttribute('src', item.imgURL);
         screenshot.appendChild(img);
-        card.appendChild(screenshot);
     }
+    card.appendChild(screenshot);
+
+    var tech = document.createElement('p');
+    tech.classList.add('tech');
+    tech.innerHTML = item.technologies;
+    var desc = document.createElement('p');
+    desc.classList.add('desc');
+    desc.innerHTML = item.description;
+
+    card.appendChild(tech);
+    card.appendChild(desc);
 
     return card;
 }
