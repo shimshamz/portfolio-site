@@ -5,42 +5,54 @@
             "type": "project",
             "url": "https://todolistapp-shimshamz.herokuapp.com/index.html",
             "githubURL": "https://github.com/shimshamz/TodoListAppJS",
-            "imgURL": "portfolio-thumbnails/img1.JPG"
+            "imgURL": "portfolio-thumbnails/img1.JPG",
+            "technologies": "HTML, CSS, JS",
+            "description": "Created a JavaScript todo list app from a tutorial."
         },
         {
             "title": "Supercars SA",
             "type": "project",
             "url": "http://supercarssa.co.za/",
             "githubURL": "https://github.com/shimshamz/Supercars-SA",
-            "imgURL": "portfolio-thumbnails/img2.JPG"
+            "imgURL": "portfolio-thumbnails/img2.JPG",
+            "technologies": "HTML, CSS, JS",
+            "description": "Developed a website for an Instagram supercar fan page, which I help manage."
         },
         {
-            "title": "AngularJS Movie Posters",
+            "title": "Movie Posters Project",
             "type": "coursework",
             "url": "https://angular-movie-shimshamz.herokuapp.com/index.html",
             "githubURL": "https://github.com/shimshamz/is219Mohanlal-p3",
-            "imgURL": "portfolio-thumbnails/img3.JPG"
+            "imgURL": "portfolio-thumbnails/img3.JPG",
+            "technologies": "HTML, CSS, JS, AngularJS",
+            "description": "Used AngularJS to list favorite movies, and loop through posters."
         },
         {
-            "title": "JS Image Gallery",
+            "title": "Image Gallery Project",
             "type": "coursework",
             "url": "https://imagegallery-shimshamz.herokuapp.com/index.html",
             "githubURL": "https://github.com/shimshamz/IS219s18Mohanlal-p2",
-            "imgURL": "portfolio-thumbnails/img4.JPG"
+            "imgURL": "portfolio-thumbnails/img4.JPG",
+            "technologies": "HTML, CSS, JS",
+            "description": "A looping image gallery, with a description slide-down tray."
         },
         {
             "title": "Laravel FAQ Bot",
             "type": "coursework",
             "url": "https://github.com/NJIT-WIS/webAPI",
             "githubURL": "https://github.com/NJIT-WIS/webAPI",
-            "imgURL": ""
+            "imgURL": "",
+            "technologies": "Laravel",
+            "description": "Worked with the backend team of a class group project. Responsible for endpoints, unit tests, migrations, models, and controllers."
         },
         {
             "title": "Portfolio Site",
             "type": "project",
             "url": "https://shimshamz.github.io/",
             "githubURL": "https://github.com/shimshamz/shimshamz.github.io",
-            "imgURL": "portfolio-thumbnails/img5.JPG"
+            "imgURL": "portfolio-thumbnails/img5.JPG",
+            "technologies": "HTML, SASS, JS",
+            "description": "Made this portfolio site from scratch."
         }
     ]
 }
