@@ -9,7 +9,7 @@ html {
     --color: #f1f1f1;
     --dark: #0f0f0f;
     --black: #000;
-    --accent: #ed8f31;
+    --accent: #f98818;
 }
 
 body {
@@ -117,7 +117,8 @@ nav {
                 padding: 8px;
                 font-size: 1em;
                 text-align: center;
-                text-transform: uppercase; 
+                text-transform: uppercase;
+                transition: 0.15s ease-in-out; 
 
                 &:hover, &:focus {
                     color: var(--dark);
@@ -135,7 +136,7 @@ nav {
             }
 
             &:hover, &:focus {
-                background-color: rgba(241, 241, 241, 0.6);
+                background-color: rgba(249, 136, 24, 0.8);
             }
 
             @media only screen and (min-width: 1024px) {
