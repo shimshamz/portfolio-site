@@ -210,7 +210,8 @@ nav ul li:hover, nav ul li:focus {
       -ms-flex-align: start;
           align-items: flex-start;
   position: fixed;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   padding: 25px 0;
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 2;
