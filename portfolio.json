@@ -42,7 +42,7 @@
             "url": "https://github.com/NJIT-WIS/webAPI",
             "githubURL": "https://github.com/NJIT-WIS/webAPI",
             "imgURL": "",
-            "technologies": "Laravel",
+            "technologies": "Laravel, Git",
             "description": "Worked with the backend team of a class group project. Responsible for endpoints, unit tests, migrations, models, and controllers."
         },
         {
