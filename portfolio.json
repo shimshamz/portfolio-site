@@ -4,7 +4,7 @@
             "title": "Evolve Mining (Internship)",
             "type": "project",
             "url": "projects/evolve",
-            "githubURL": "https://github.com/shimshamz/TodoListAppJS",
+            "githubURL": "https://github.com/shimshamz/EvolveMining",
             "imgURL": "portfolio-thumbnails/img7.JPG",
             "technologies": "HTML, CSS, UIkit",
             "description": "Convert a design into a web page with UIkit. I later intergrated this into a Wordpress site and customized the theme using Beans, a framework."
@@ -13,10 +13,10 @@
             "title": "The Leadership Centre (Internship)",
             "type": "project",
             "url": "projects/tlc",
-            "githubURL": "https://github.com/shimshamz/TodoListAppJS",
+            "githubURL": "https://github.com/shimshamz/TheLeadershipCentre",
             "imgURL": "portfolio-thumbnails/img6.JPG",
             "technologies": "HTML, CSS, UIkit",
-            "description": "My first task for my internship was to clone the hompage of <a href='https://theleadershipcentre.net/'>The Leadership Centre's</a> site using the CSS framework, UIkit."
+            "description": "My first task for my internship was to clone the hompage of <a href='https://theleadershipcentre.net/' class='link'>The Leadership Centre's</a> site using the CSS framework, UIkit."
         },
         {
             "title": "JS To-do List App",
