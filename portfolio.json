@@ -1,6 +1,15 @@
 {
     "items": [
         {
+            "title": "The Leadership Centre Homepage Clone",
+            "type": "project",
+            "url": "projects/tlc",
+            "githubURL": "https://github.com/shimshamz/TodoListAppJS",
+            "imgURL": "portfolio-thumbnails/img6.JPG",
+            "technologies": "HTML, CSS, Uikit",
+            "description": "My first task for my internship was to clone the hompage of The Leadership Centre's site using the CSS framework, Uikit."
+        },
+        {
             "title": "JS To-do List App",
             "type": "project",
             "url": "https://todolistapp-shimshamz.herokuapp.com/index.html",

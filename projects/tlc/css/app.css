@@ -1,0 +1,66 @@
+.bg-primary {
+    background-color: #389cd4;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-dark {
+    background-color: #5c5c5c;
+}
+.bg-none {
+    background-color: transparent;
+}
+.font-primary {
+    color: #389cd4;
+}
+.font-white {
+    color: #ffffff;
+}
+.font-dark {
+    color: #4b4d4f;
+}
+.font-danger {
+    color: #ffffff;
+}
+.font-danger:hover {
+    color: #ef5d34;
+}
+.border-primary {
+    border: 3px #389cd4 solid;
+}
+.padding {
+    padding: 10px;
+}
+.padding-medium {
+    padding: 30px;
+}
+.padding-small {
+    padding: 8px;
+}
+.grayscale {
+    filter: grayscale();
+    transition: all 0.8s ease;
+}
+.grayscale:hover, .grayscale:focus {
+    filter: none;
+}
+.nav-list li a {
+    color: #ffffff;
+}
+.nav-list li a:hover {
+    color: #389cd4;
+    text-decoration: none;
+}
+.social-icon {
+    color: #389cd4;
+    background-color: transparent;
+    border: 3px #389cd4 solid;
+}
+.social-icon:hover {
+    color: #ffffff;
+    background-color: transparent;
+    border: 3px #ffffff solid;
+}
+.bold {
+    font-weight: 700;
+}
