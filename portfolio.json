@@ -24,7 +24,7 @@
             "url": "https://github.com/shimshamz/it490-development",
             "githubURL": "https://github.com/shimshamz/it490-development",
             "imgURL": "",
-            "technologies": "HTML, CSS, Bootstrap, PHP",
+            "technologies": "HTML, CSS, Bootstrap, JS, PHP",
             "description": "A group project where we developed an app that uses the Barchart API to retrieve stock market information. It allows a user to create a portfolio by buying and selling shares with fake money based on real prices and historical data, and view news related to the portfolio."
         },
         {
