@@ -299,10 +299,6 @@ nav {
                 background-color: var(--accent);
             }
         }
-
-        .link {
-            color: var(--accent);
-        }
     }
 
     .screenshot {
@@ -330,5 +326,9 @@ nav {
         width: 100%;
         font-size: 0.8em;
         margin: 0;
+
+        .link {
+            color: var(--accent);
+        }
     }
 }

@@ -398,10 +398,6 @@ nav ul li:hover, nav ul li:focus {
   background-color: var(--accent);
 }
 
-.item-card .card-header .link {
-  color: var(--accent);
-}
-
 .item-card .screenshot {
   width: 100%;
   -webkit-box-flex: 1;
@@ -430,5 +426,9 @@ nav ul li:hover, nav ul li:focus {
   width: 100%;
   font-size: 0.8em;
   margin: 0;
+}
+
+.item-card .desc .link {
+  color: var(--accent);
 }
 /*# sourceMappingURL=style.css.map */
