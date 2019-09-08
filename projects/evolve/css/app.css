@@ -1,0 +1,129 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+.bg-primary {
+    background-color: #BF1E2E;
+}
+.bg-secondary {
+    background-color: #f5f5f5;
+}
+.font-primary {
+    color: #BF1E2E!important;
+}
+.font-white {
+    color: #ffffff;
+}
+.font-dark {
+    color: #444;
+}
+.bold {
+    font-weight: 700!important;
+}
+.underline {
+    text-decoration: underline;
+}
+.shadow {
+    position: relative;
+}
+.header-font {
+  font-size: 44px;
+  line-height: 50px;
+}
+p {
+    font-weight: 300!important;
+}
+li.uk-padding-left-remove a {
+    padding: 0;
+}
+.mobile-menu {
+    font-size: 24px;
+}
+@media (min-width: 768px) {
+    .shadow-title:after {
+        content: '';
+        position: absolute;
+        height: 95%;
+        width: 100%;
+        top: 13%;
+        left: 15%;
+        background-color: #f5f5f5;
+        z-index: -10;
+    }
+    .shadow-left {
+        box-shadow: -34px 40px 0px 0px #f5f5f5;
+    }
+    .shadow-right {
+        box-shadow: 34px 40px 0px 0px #f5f5f5;
+    }
+}
+@media (min-width: 960px) {
+    .shadow-title:after {
+        width: 100%;
+        left: 15%;
+    }
+}
+@media (min-width: 1300px) {
+    .shadow-title:after {
+        height: 92%;
+        top: 15%;
+    }
+}
+.header-container {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+}
+@media (min-width: 1300px) {
+    .header-container {
+      max-width: 1280px;
+      padding: 0 35px;
+    }
+}
+.header-title {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+@media (min-width: 960px) {
+    .header-title {
+        padding: 0 35px 0 0;
+    }
+}
+@media (min-width: 1300px) {
+    .header-title {
+      max-width: 1280px;
+    }
+}
+.body-container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .body-container {
+      max-width: 1220px;
+      padding: 0 20px;
+    }
+}
+@media (min-width: 1300px) {
+    .body-container {
+      padding: 0 35px;
+    }
+}
+@media (min-width:768px) and (max-width: 1024px) {
+    .header-font {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 767px) {
+    .header-font {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .uk-text-large {
+        font-size: 16px;
+    }
+}
