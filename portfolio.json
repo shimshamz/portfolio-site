@@ -19,6 +19,15 @@
             "description": "My first task for my internship was to clone the hompage of <a href='https://theleadershipcentre.net/' class='link'>The Leadership Centre's</a> site using the CSS framework, UIkit."
         },
         {
+            "title": "Stock Market Simulator",
+            "type": "coursework",
+            "url": "https://github.com/shimshamz/it490-development",
+            "githubURL": "https://github.com/shimshamz/it490-development",
+            "imgURL": "",
+            "technologies": "HTML, CSS, Bootstrap, PHP",
+            "description": "A group project where we developed an app that uses the Barchart API to retrieve stock market information. It allows a user to create a portfolio by buying and selling shares with fake money based on real prices and historical data, and view news related to the portfolio."
+        },
+        {
             "title": "JS To-do List App",
             "type": "project",
             "url": "https://todolistapp-shimshamz.herokuapp.com/index.html",
@@ -37,6 +46,15 @@
             "description": "Developed a website for an Instagram supercar fan page that I help manage."
         },
         {
+            "title": "Laravel FAQ Bot",
+            "type": "coursework",
+            "url": "https://github.com/NJIT-WIS/webAPI",
+            "githubURL": "https://github.com/NJIT-WIS/webAPI",
+            "imgURL": "",
+            "technologies": "Laravel, Git",
+            "description": "Worked with the backend team of a class group project. Responsible for endpoints, unit tests, migrations, models, and controllers."
+        },
+        {
             "title": "Movie Posters Project",
             "type": "coursework",
             "url": "https://angular-movie-shimshamz.herokuapp.com/index.html",
@@ -53,24 +71,6 @@
             "imgURL": "portfolio-thumbnails/img4.JPG",
             "technologies": "HTML, CSS, JS",
             "description": "A looping image gallery, with a description slide-down tray."
-        },
-        {
-            "title": "Laravel FAQ Bot",
-            "type": "coursework",
-            "url": "https://github.com/NJIT-WIS/webAPI",
-            "githubURL": "https://github.com/NJIT-WIS/webAPI",
-            "imgURL": "",
-            "technologies": "Laravel, Git",
-            "description": "Worked with the backend team of a class group project. Responsible for endpoints, unit tests, migrations, models, and controllers."
-        },
-        {
-            "title": "Stock Market Simulator",
-            "type": "coursework",
-            "url": "https://github.com/shimshamz/it490-development",
-            "githubURL": "https://github.com/shimshamz/it490-development",
-            "imgURL": "",
-            "technologies": "HTML, CSS, Bootstrap, PHP",
-            "description": "A group project where we developed an app that uses the Barchart API to retrieve stock market information. It allows a user to create a portfolio by buying and selling shares with fake money based on real prices and historical data, and view news related to the portfolio."
         },
         {
             "title": "Portfolio Site",
