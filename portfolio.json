@@ -88,7 +88,7 @@
             "githubURL": "https://github.com/shimshamz/react-pixabay-image-finder",
             "imgURL": "portfolio-thumbnails/img8.JPG",
             "technologies": "React",
-            "description": "Followed a React tutorial where I created an image finder, that fetches images using the PixaBay API."
+            "description": "Followed a React tutorial where I created an image finder that fetches images using the Pixabay API."
         }
     ]
 }
