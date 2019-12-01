@@ -80,6 +80,15 @@
             "imgURL": "portfolio-thumbnails/img5.JPG",
             "technologies": "HTML, SASS, JS",
             "description": "Made this portfolio site from scratch."
+        },
+        {
+            "title": "Pixabay Image Finder",
+            "type": "project",
+            "url": "https://shimshamz.github.io/react-pixabay-image-finder/",
+            "githubURL": "https://github.com/shimshamz/react-pixabay-image-finder",
+            "imgURL": "portfolio-thumbnails/img8.JPG",
+            "technologies": "React",
+            "description": "Followed a React tutorial where I created an image finder, that fetches images using the PixaBay API."
         }
     ]
 }
