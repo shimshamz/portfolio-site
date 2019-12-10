@@ -31,6 +31,7 @@
                 </li>
             </ul>
         </nav>
+        <div id="uploadBtn"></div>
     </div>
 
     <!-- About Modal -->
@@ -87,6 +88,30 @@
         </div>
     </div>
 
+    <!-- Sign In Modal -->
+    <div class="modal" id="signIn">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h1>Sign In</h1>
+                <div class="closeBtn">
+                    <span class="lines one"></span>
+                    <span class="lines two"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div>
+                        <input name="email" placeholder="Email" id="email" required>
+                    </div>
+                    <div>
+                        <input name="password" placeholder="Password" id="password" type="password" required>
+                    </div>
+                    <button class="signin-btn" id="signInBtn">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script type="text/javascript" src="js/modal.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
@@ -97,6 +122,7 @@
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
 
     <script>
     // Your web app's Firebase configuration

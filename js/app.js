@@ -1,12 +1,29 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyAoJXeBndGCWlUq6pzA3dQY-KYaydAp3fA",
-    authDomain: "portfolio-shimshamz.firebaseapp.com",
-    databaseURL: "https://portfolio-shimshamz.firebaseio.com",
-    projectId: "portfolio-shimshamz",
-    storageBucket: "portfolio-shimshamz.appspot.com",
-    messagingSenderId: "787435577824",
-    appId: "1:787435577824:web:1ce17e6d18a1de4f91cb85"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const uploadBtn = document.getElementById('uploadBtn');
+const signInBtn = document.getElementById('signInBtn');
+
+uploadBtn.addEventListener('click', e => {
+    //auth(email, password);
+
+    modal = document.getElementById('signIn');
+    modal.style.display = 'flex';
+    setTimeout(function() {
+        modal.style.opacity = 1;
+    }, 50);
+});
+
+signInBtn.addEventListener('click', e => {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    auth(email, password);
+    document.getElementById('email').value = "";
+    document.getElementById('password').value = "";
+})
+
+function auth(email, password) {
+    firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
+        console.log('Login successful!');
+        closeModal();
+    }).catch(function(error) {
+        console.log(error.message);
+    });
+}
