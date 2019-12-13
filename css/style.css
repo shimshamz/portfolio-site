@@ -303,20 +303,15 @@ nav ul li:hover, nav ul li:focus {
 }
 
 #signIn .modal-container {
-  width: 90%;
-  height: auto;
   max-width: 300px;
-  margin: 20px 0;
-  padding: 5px 15px 10px;
-  background-color: var(--dark);
 }
 
-#signIn div div {
+.form div {
   margin-bottom: 20px;
   position: relative;
 }
 
-#signIn div input {
+.form input {
   width: 100%;
   padding: 5px;
   display: block;
@@ -332,11 +327,11 @@ nav ul li:hover, nav ul li:focus {
   transition: 0.15s ease-in-out;
 }
 
-#signIn div input:focus {
+.form input:focus {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#signIn div .signin-btn {
+.form .submit-btn {
   font-size: 1.1em;
   padding: 8px;
   background-color: transparent;
@@ -348,7 +343,7 @@ nav ul li:hover, nav ul li:focus {
   transition: 0.15s ease-in-out;
 }
 
-#signIn div .signin-btn:hover, #signIn div .signin-btn:focus {
+.form .submit-btn:hover, .form .submit-btn:focus {
   background-color: var(--accent);
 }
 

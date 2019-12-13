@@ -242,20 +242,17 @@ nav {
 
 #signIn {
     .modal-container {
-        width: 90%;
-        height: auto;
         max-width: 300px;
-        margin: 20px 0;
-        padding: 5px 15px 10px;
-        background-color: var(--dark);
     }
+}
 
-    div div {
+.form {
+    div {
         margin-bottom: 20px;
         position: relative;
     }
 
-    div input {
+    input {
         width: 100%;
         padding: 5px;
         display: block;
@@ -274,7 +271,7 @@ nav {
         }
     }
 
-    div .signin-btn {
+    .submit-btn {
         font-size: 1.1em;
         padding: 8px;
         background-color: transparent;
