@@ -1,15 +1,17 @@
 const uploadType = document.getElementById('upload-type');
+const porfolioFields = document.getElementById('portfolioFields');
+const photoFields = document.getElementById('photoFields');
 const imageUploadBtn = document.getElementById('imageUpload');
 const imageName = document.getElementById('imageName');
-
-const containers = getAllFieldContainers();
-const fields = getAllFields();
-console.log(containers);
 
 uploadType.addEventListener('change', e => {
     const value = e.target.value;
     if (value == 'portfolio') {
-
+        photoFields.style.display = 'none';
+        portfolioFields.style.display = 'block';
+    } else if (value == 'photo') {
+        portfolioFields.style.display = 'none';
+        photoFields.style.display = 'block';
     }
 });
 
@@ -31,26 +33,3 @@ imageUploadBtn.addEventListener('change', e => {
     .catch(console.error);
 });
 
-function getAllFieldContainers() {
-    const titleContainer = document.getElementById('titleContainer');
-    const linkContainer = document.getElementById('linkContainer');
-    const githubLinkContainer = document.getElementById('githubLinkContainer');
-    const imageUploadContainer = document.getElementById('imageUploadContainer');
-    const locationContainer = document.getElementById('locationContainer');
-    const technologiesContainer = document.getElementById('technologiesContainer');
-    const descriptionContainer = document.getElementById('descriptionContainer');
-
-    return [titleContainer, linkContainer, githubLinkContainer, imageUploadContainer, locationContainer, technologiesContainer, descriptionContainer];
-}
-
-function getAllFields() {
-    const title = document.getElementById('title');
-    const link = document.getElementById('link');
-    const githubLink = document.getElementById('githubLink');
-    const imageUpload = document.getElementById('imageUpload');
-    const location = document.getElementById('location');
-    const technologies = document.getElementById('technologies');
-    const description = document.getElementById('description');
-
-    return [title, link, githubLink, imageUpload, location, technologies, description];
-}

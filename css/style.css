@@ -383,6 +383,10 @@ nav ul li:hover, nav ul li:focus {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.form #portfolioFields, .form #photoFields {
+  display: none;
+}
+
 .form .submit-btn {
   font-size: 1.1em;
   padding: 8px;

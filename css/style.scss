@@ -320,6 +320,10 @@ nav {
         background-color: rgba(0,0,0,0.8);
     }
 
+    #portfolioFields, #photoFields {
+        display: none;
+    }
+
     .submit-btn {
         font-size: 1.1em;
         padding: 8px;
