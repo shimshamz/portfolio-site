@@ -306,28 +306,80 @@ nav ul li:hover, nav ul li:focus {
   max-width: 300px;
 }
 
-.form div {
+.form .form-field {
   margin-bottom: 20px;
   position: relative;
 }
 
-.form input {
-  width: 100%;
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form label.custom-file-upload {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+  font-size: 1.1em;
+  padding: 8px;
+  background-color: transparent;
+  outline: none;
+  border: 2px var(--color) solid;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.form label.custom-file-upload:hover, .form label.custom-file-upload:focus {
+  border-color: var(--accent);
+}
+
+.form input, .form select, .form textarea {
   padding: 5px;
   display: block;
   position: relative;
   font-size: 1.1em;
   line-height: 1.8;
   color: var(--color);
-  background-color: transparent;
   border: none;
   outline: none;
+}
+
+.form input {
+  width: 100%;
+  background-color: transparent;
   border-bottom: 1px solid var(--color);
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
 }
 
 .form input:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form input[type="file"] {
+  width: auto;
+  border-bottom: none;
+  display: none;
+}
+
+.form select {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form select:hover, .form select:focus {
+  color: var(--accent);
+}
+
+@media only screen and (min-width: 768px) {
+  .form select {
+    width: 35%;
+  }
+}
+
+.form textarea {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
 

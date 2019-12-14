@@ -124,11 +124,44 @@
             </div>
             <div class="modal-body">
                 <div class="form">
-                    <div>
+                    <div class="form-field">
+                        <label for="upload-type">Upload Type:</label>
+                        <select name="upload-type" id="upload-type" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="portfolio">Porfolio Item</option>
+                            <option value="photo">Photo</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="item-type">Item Type:</label>
+                        <select name="item-type" id="item-type" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="project">Project</option>
+                            <option value="coursework">Coursework</option>
+                        </select>
+                    </div>
+                    <div class="form-field" id="titleContainer">
                         <input name="title" placeholder="Title" id="title" required>
                     </div>
-                    <div>
-                        <input name="url" placeholder="URL" id="url" required>
+                    <div class="form-field" id="linkContainer">
+                        <input name="link" placeholder="Link" id="link" required>
+                    </div>
+                    <div class="form-field" id="githubLinkContainer">
+                        <input name="githubLink" placeholder="Github Link" id="githubLink" type="url" required>
+                    </div>
+                    <div class="form-field" id="imageUploadContainer">
+                        <label for="image-upload" class="custom-file-upload">Upload Image</label>
+                        <input name="image" id="imageUpload" type="file" required>
+                        <span id="imageName"></span>
+                    </div>
+                    <div class="form-field" id="locationContainer">
+                        <input name="location" placeholder="Location" id="location" required>
+                    </div>
+                    <div class="form-field" id="technologiesContainer">
+                        <input name="technologies" placeholder="Technologies used...(HTML, CSS, JS)" id="technologies" required>
+                    </div>
+                    <div class="form-field" id="descriptionContainer">
+                        <textarea name="description" placeholder="Description" id="description" required></textarea>
                     </div>
                     <button class="submit-btn" id="submitBtn">Submit</button>
                 </div>
@@ -164,5 +197,6 @@
     </script>
 
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/upload.js"></script>
 </body>
 </html>

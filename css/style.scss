@@ -247,28 +247,77 @@ nav {
 }
 
 .form {
-    div {
+    .form-field {
         margin-bottom: 20px;
         position: relative;
     }
 
-    input {
-        width: 100%;
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    label.custom-file-upload {
+        display: inline-block;
+        margin: 0px 10px 0px 0px;
+        font-size: 1.1em;
+        padding: 8px;
+        background-color: transparent;
+        outline: none;
+        border: 2px var(--color) solid;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.15s ease-in-out;
+
+        &:hover, &:focus {
+            border-color: var(--accent);
+        }
+    }
+
+    input, select, textarea {
         padding: 5px;
         display: block;
         position: relative;
         font-size: 1.1em;
         line-height: 1.8;
         color: var(--color);
-        background-color: transparent;
         border: none;
         outline: none;
+    }
+
+    input {
+        width: 100%;
+        background-color: transparent; 
         border-bottom: 1px solid var(--color);
         transition: 0.15s ease-in-out;
 
         &:focus {
             background-color: rgba(0,0,0,0.8);
         }
+
+        &[type="file"] {
+            width: auto;
+            border-bottom: none;
+            display: none;
+        }
+    }
+
+    select {
+        width: 100%;
+        background-color: rgba(0,0,0,0.8);
+
+        &:hover, &:focus {
+            color: var(--accent);
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 35%;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        background-color: rgba(0,0,0,0.8);
     }
 
     .submit-btn {
