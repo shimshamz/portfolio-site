@@ -2,7 +2,7 @@ var request = new XMLHttpRequest();
 var portfolioItems;
 var githubIcon = '<i class="fab fa-github"></i>';
 
-request.onreadystatechange=function() {
+/* request.onreadystatechange=function() {
     if (this.readyState==4 && this.status==200) {
         var jsonResponse = (request.responseText);
         portfolioItems = JSON.parse(jsonResponse).items;
@@ -11,11 +11,17 @@ request.onreadystatechange=function() {
 }
 
 request.open("GET", '../portfolio.json', true);
-request.send();
+request.send(); */
+
+db.collection('portfolio-items').orderBy("dateAdded", "desc").get().then((snapshot) => {
+    portfolioItems = snapshot.docs;
+    populatePortfolio(portfolioItems);
+})
 
 function populatePortfolio(items) {
     Array.from(items).forEach(function(item) {
-        if (item.type == 'project') {
+        item = item.data();
+        if (item.itemType == 'project') {
             var list = document.getElementById('projects');
         } else {
             var list = document.getElementById('coursework');
@@ -36,11 +42,11 @@ function createCard(item) {
     title.classList.add('title');
     var titleLink = document.createElement('a');
     titleLink.innerHTML = item.title;
-    titleLink.setAttribute('href', item.url);
+    titleLink.setAttribute('href', item.link);
 
     var githubBtn = document.createElement('a');
     githubBtn.classList.add('github-btn');
-    githubBtn.setAttribute('href', item.githubURL);
+    githubBtn.setAttribute('href', item.githubLink);
     githubBtn.innerHTML = 'GitHub ' + githubIcon;
 
     title.appendChild(titleLink);
@@ -51,10 +57,15 @@ function createCard(item) {
 
     var screenshot = document.createElement('div');
     screenshot.classList.add('screenshot');
-    if (item.imgURL) {
-        var img = document.createElement('img');
-        img.setAttribute('src', item.imgURL);
-        screenshot.appendChild(img);
+    if (item.imgLink) {
+        let storageRef = storage.ref(item.imgLink);
+        storageRef.getDownloadURL().then(function(url) {
+            var img = document.createElement('img');
+            img.setAttribute('src', url);
+            screenshot.appendChild(img);
+        }).catch(function(error) {
+            console.log(error);
+        });
     }
     card.appendChild(screenshot);
 
