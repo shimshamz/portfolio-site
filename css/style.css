@@ -380,6 +380,7 @@ nav ul li:hover, nav ul li:focus {
 
 #form textarea {
   width: 100%;
+  font-size: 1em;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
