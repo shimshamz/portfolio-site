@@ -71,7 +71,11 @@ function handleImageUpload() {
 function handleFormSubmit(e) {
     e.preventDefault();
     const fields = getAllFields();
-    db.collection('portfolio-items').add(fields);
+    if (uploadType.value == 'portfolio') {
+        db.collection('portfolio-items').add(fields);
+    } else if (uploadType.value == 'photo') {
+        db.collection('photos').add(fields);
+    }
     if (file) {
         handleImageUpload();
     }
