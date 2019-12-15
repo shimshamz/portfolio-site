@@ -40,6 +40,7 @@ function getAllFields() {
     const title = getInputVal('title');
     form['title'] = title;
     form['imgLink'] = (file ? 'portfolio-items/' + file.name : "");
+    form['dateAdded'] = firebase.firestore.Timestamp.fromDate(new Date());
     if (uploadType.value == 'portfolio') {
         const link = getInputVal('link');
         const githubLink = getInputVal('githubLink');
@@ -64,8 +65,14 @@ function getAllFields() {
 }
 
 function handleImageUpload() {
-    let storageRef = storage.ref('portfolio-items/' + file.name);
-    storageRef.put(file);
+    if (uploadType.value == 'portfolio') {
+        let storageRef = storage.ref('portfolio-items/' + file.name);
+        storageRef.put(file);
+    } else if (uploadType.value == 'photo') {
+        let storageRef = storage.ref('photos/' + file.name);
+        storageRef.put(file);
+    }
+    
 }
 
 function handleFormSubmit(e) {
