@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <div class="form-field" id="imageUploadContainer">
-                        <label for="image-upload" class="custom-file-upload">Upload Image</label>
+                        <label for="imageUpload" class="custom-file-upload">Upload Image</label>
                         <input name="image" id="imageUpload" type="file" required>
                         <span id="imageName"></span>
                     </div>
@@ -184,6 +184,8 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-storage.js"></script>
 
     <script>
     // Your web app's Firebase configuration
@@ -198,6 +200,8 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var storage = firebase.storage();
     </script>
 
     <script type="text/javascript" src="js/app.js"></script>
