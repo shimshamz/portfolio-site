@@ -5,6 +5,7 @@ const imageUploadBtn = document.getElementById('imageUpload');
 const imageName = document.getElementById('imageName');
 let file;
 const submitBtn = document.getElementById('submitBtn');
+const form = document.getElementById('form');
 
 uploadType.addEventListener('change', e => {
     const value = e.target.value;
@@ -14,6 +15,9 @@ uploadType.addEventListener('change', e => {
     } else if (value == 'photo') {
         portfolioFields.style.display = 'none';
         photoFields.style.display = 'block';
+    } else {
+        portfolioFields.style.display = 'none';
+        photoFields.style.display = 'none';
     }
 });
 
@@ -27,7 +31,7 @@ imageUploadBtn.addEventListener('change', e => {
     imageName.textContent = file.name;
 });
 
-submitBtn.addEventListener('click', handleFormSubmit);
+form.addEventListener('submit', handleFormSubmit);
 
 
 
@@ -64,13 +68,14 @@ function handleImageUpload() {
     storageRef.put(file);
 }
 
-function handleFormSubmit() {
-    const form = getAllFields();
-    db.collection('portfolio-items').add(form);
+function handleFormSubmit(e) {
+    e.preventDefault();
+    const fields = getAllFields();
+    db.collection('portfolio-items').add(fields);
     if (file) {
         handleImageUpload();
     }
-    
+    form.reset();
 }
 
 function getInputVal(id) {

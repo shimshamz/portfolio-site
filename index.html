@@ -123,7 +123,7 @@
                 </div>
             </div>
             <div class="modal-body">
-                <div class="form">
+                <form id="form">
                     <div class="form-field">
                         <label for="upload-type">Upload Type:</label>
                         <select name="upload-type" id="upload-type" required>
@@ -137,38 +137,38 @@
                     </div>
                     <div id="portfolioFields">
                         <div class="form-field" id="linkContainer">
-                            <input name="link" placeholder="Link" id="link" required>
+                            <input name="link" placeholder="Link" id="link">
                         </div>
                         <div class="form-field" id="githubLinkContainer">
-                            <input name="githubLink" placeholder="Github Link" id="githubLink" type="url" required>
+                            <input name="githubLink" placeholder="Github Link" id="githubLink">
                         </div>
                         <div class="form-field" id="technologiesContainer">
-                            <input name="technologies" placeholder="Technologies used...(HTML, CSS, JS)" id="technologies" required>
+                            <input name="technologies" placeholder="Technologies used...(HTML, CSS, JS)" id="technologies">
                         </div>
                         <div class="form-field">
                             <label for="item-type">Item Type:</label>
-                            <select name="item-type" id="item-type" required>
+                            <select name="item-type" id="item-type">
                                 <option value="" disabled selected>Select one</option>
                                 <option value="project">Project</option>
                                 <option value="coursework">Coursework</option>
                             </select>
                         </div>
                         <div class="form-field" id="descriptionContainer">
-                            <textarea name="description" placeholder="Description" id="description" required></textarea>
+                            <textarea name="description" placeholder="Description" id="description"></textarea>
                         </div>
                     </div>
                     <div id="photoFields">
                         <div class="form-field" id="locationContainer">
-                            <input name="location" placeholder="Location" id="location" required>
+                            <input name="location" placeholder="Location" id="location">
                         </div>
                     </div>
                     <div class="form-field" id="imageUploadContainer">
                         <label for="imageUpload" class="custom-file-upload">Upload Image</label>
-                        <input name="image" id="imageUpload" type="file" required>
+                        <input name="image" id="imageUpload" type="file">
                         <span id="imageName"></span>
                     </div>
                     <button class="submit-btn" id="submitBtn">Submit</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
