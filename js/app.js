@@ -21,7 +21,9 @@ function auth(email, password) {
     firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
         console.log('Login successful!');
         closeModal();
-        openModal('upload');
+        setTimeout(function() {
+            openModal('upload');
+        }, 150);
     }).catch(function(error) {
         console.log(error.message);
     });
