@@ -13,11 +13,13 @@ var githubIcon = '<i class="fab fa-github"></i>';
 request.open("GET", '../portfolio.json', true);
 request.send(); */
 
+// Gets all portfolio data from Firestore database
 db.collection('portfolio-items').orderBy("dateAdded", "desc").get().then((snapshot) => {
     portfolioItems = snapshot.docs;
     populatePortfolio(portfolioItems);
 })
 
+// Adds items to portfolio
 function populatePortfolio(items) {
     Array.from(items).forEach(function(item) {
         item = item.data();
@@ -31,6 +33,7 @@ function populatePortfolio(items) {
     });
 }
 
+// Creates item card for each portfolio item
 function createCard(item) {
     var card = document.createElement('div');
     card.classList.add('item-card');

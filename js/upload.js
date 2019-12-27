@@ -7,6 +7,7 @@ let file;
 const submitBtn = document.getElementById('submitBtn');
 const form = document.getElementById('form');
 
+// Event listener for upload type dropdown box
 uploadType.addEventListener('change', e => {
     const value = e.target.value;
     if (value == 'portfolio') {
@@ -21,9 +22,7 @@ uploadType.addEventListener('change', e => {
     }
 });
 
-
-
-
+// Listener for image input field
 imageUploadBtn.addEventListener('change', e => {
     const files = e.target.files;
     file = files[0];
@@ -31,10 +30,10 @@ imageUploadBtn.addEventListener('change', e => {
     imageName.textContent = file.name;
 });
 
+// Event listener that calls handleFormSubmit function on form submit
 form.addEventListener('submit', handleFormSubmit);
 
-
-
+// Retrieves data from all the form fields and inserts into an object
 function getAllFields() {
     var form = new Object();
     const title = getInputVal('title');
@@ -64,6 +63,7 @@ function getAllFields() {
     return form;
 }
 
+// Upload image to Firestore storage
 function handleImageUpload() {
     if (uploadType.value == 'portfolio') {
         let storageRef = storage.ref('portfolio-items/' + file.name);
@@ -75,6 +75,7 @@ function handleImageUpload() {
     
 }
 
+// Inserts data from form into Firestore database
 function handleFormSubmit(e) {
     e.preventDefault();
     const fields = getAllFields();
@@ -89,6 +90,7 @@ function handleFormSubmit(e) {
     form.reset();
 }
 
+// Retrieves value from a field
 function getInputVal(id) {
     return document.getElementById(id).value;
 }
